@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
+  <test thread-count="5" name="POM_Automation_Framework(failed)">
+    <classes>
+      <class name="testcases.TestCases">
+        <methods>
+          <include name="tearDownAppium"/>
+          <include name="afterClass"/>
+          <include name="test"/>
+          <include name="afterMethod"/>
+          <include name="startAppiumServer"/>
+          <include name="setUpAppium"/>
+          <include name="setUpPage"/>
+        </methods>
+      </class> <!-- testcases.TestCases -->
+    </classes>
+  </test> <!-- POM_Automation_Framework(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

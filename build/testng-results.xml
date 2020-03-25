@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default Suite" duration-ms="18664" started-at="2020-03-24T15:00:13Z" finished-at="2020-03-24T15:00:31Z">
+    <groups>
+    </groups>
+    <test name="POM_Automation_Framework" duration-ms="18664" started-at="2020-03-24T15:00:13Z" finished-at="2020-03-24T15:00:31Z">
+      <class name="testcases.TestCases">
+        <test-method status="PASS" signature="startAppiumServer()[pri:0, instance:testcases.TestCases@2cb4c3ab]" name="startAppiumServer" is-config="true" duration-ms="5567" started-at="2020-03-24T15:00:07Z" finished-at="2020-03-24T15:00:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAppiumServer -->
+        <test-method status="PASS" signature="setUpPage()[pri:0, instance:testcases.TestCases@2cb4c3ab]" name="setUpPage" is-config="true" duration-ms="1" started-at="2020-03-24T15:00:13Z" finished-at="2020-03-24T15:00:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPage -->
+        <test-method status="PASS" signature="setUpAppium()[pri:0, instance:testcases.TestCases@2cb4c3ab]" name="setUpAppium" is-config="true" duration-ms="15993" started-at="2020-03-24T15:00:13Z" finished-at="2020-03-24T15:00:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpAppium -->
+        <test-method status="PASS" signature="test()[pri:0, instance:testcases.TestCases@2cb4c3ab]" name="test" duration-ms="1613" started-at="2020-03-24T15:00:29Z" finished-at="2020-03-24T15:00:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCases@2cb4c3ab]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-03-24T15:00:31Z" finished-at="2020-03-24T15:00:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test status=SUCCESS method=TestCases.test()[pri:0, instance:testcases.TestCases@2cb4c3ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:testcases.TestCases@2cb4c3ab]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-03-24T15:00:31Z" finished-at="2020-03-24T15:00:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="tearDownAppium()[pri:0, instance:testcases.TestCases@2cb4c3ab]" name="tearDownAppium" is-config="true" duration-ms="234" started-at="2020-03-24T15:00:37Z" finished-at="2020-03-24T15:00:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAppium -->
+      </class> <!-- testcases.TestCases -->
+    </test> <!-- POM_Automation_Framework -->
+  </suite> <!-- Default Suite -->
+</testng-results>

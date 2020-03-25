@@ -1,9 +1,9 @@
 /*********************************************************************************************************
- * File Name: TRAAndroidTestDriver.java
+ * File Name: StartGenymotion.java
  * Author: Sampad Rout
  * Creation Date: 24-Feb-2016
  * Description: This is the class created to start Genymotion emulator
- * Copyright: Thinkrite Inc.
+ * Copyright:
  *********************************************************************************************************/
 
 package utils;
@@ -16,9 +16,10 @@ import org.apache.commons.exec.DefaultExecutor;
 import org.apache.commons.exec.ExecuteException;
 
 public class StartGenymotion {
-    static String deviceName = "Google_Nexus_6P_7.1";
 
-    public static void startgenymotion() throws ExecuteException, IOException, InterruptedException {
+    private static String deviceName = "Google_Nexus_6P_7.1";
+
+    public static void startEmulator() throws ExecuteException, IOException, InterruptedException {
 
         DefaultExecutor executor = new DefaultExecutor();
         DefaultExecuteResultHandler resultHandler = new DefaultExecuteResultHandler();

@@ -33,6 +33,7 @@ import java.util.concurrent.TimeUnit;
 
 @Listeners({ScreenshotUtility.class})
 public abstract class BaseTest {
+
     /**
      * As driver static it will be created only once and used across all of the test classes.
      */
@@ -52,6 +53,17 @@ public abstract class BaseTest {
     public void startAppiumServer() throws IOException {
         killExistingAppiumProcess();
         killExistingAppiumProcess();
+
+        // creating appium logs folder and files
+        File appiumLogDir = new File(System.getProperty("user.dir") + "/appiumlogs");
+        if (!appiumLogDir.exists()) {
+            appiumLogDir.mkdir();
+        }
+        File logFile = new File(appiumLogDir, "appiumLogs.txt");
+        if (!logFile.exists()) {
+            logFile.createNewFile();
+        }
+
         if (AppiumServer.appium == null || !AppiumServer.appium.isRunning()) {
                 AppiumServer.start();
                 System.out.println("Appium server has been started");
@@ -141,8 +153,9 @@ public abstract class BaseTest {
         String APP_FULL_RESET = PropertyUtils.getProperty("android.app.full.reset");
         String APP_NO_RESET = PropertyUtils.getProperty("android.app.no.reset");
 
+        desiredCapabilities.setCapability("avd", "Pixel3");
         desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
-        desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, DEVICE_NAME);
+//        desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, DEVICE_NAME);
         desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, PLATFORM_NAME);
         desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, PLATFORM_VERSION);
         desiredCapabilities.setCapability(MobileCapabilityType.APP, APP_PATH); // Use APP_PATH if the file is in the local folder

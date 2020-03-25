@@ -14,7 +14,9 @@ public class AppiumServer {
     public static void start() throws IOException {
         AppiumServiceBuilder builder = new AppiumServiceBuilder()
                 .withAppiumJS(new File("/usr/local/lib/node_modules/appium/build/lib/main.js"))
-                .withArgument(GeneralServerFlag.SESSION_OVERRIDE);
+                .withArgument(GeneralServerFlag.SESSION_OVERRIDE)
+                .withArgument(GeneralServerFlag.LOG_LEVEL, "debug") // error:info, debug
+                .withLogFile(new File(System.getProperty("user.dir") + "/appiumlogs/appiumLogs.txt"));
         appium = builder.build();
         appium.start();
         System.out.println("Appium server has been started");

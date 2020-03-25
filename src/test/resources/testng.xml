@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!--
+<suite name="Android Test Suite" parallel="false" verbose="1">
+	<test name="Verify Login" parallel="false" preserve-order="true">
+	    <groups>
+	        <run>
+	            <include name="Sanity" />
+	        </run>
+	    </groups>
+		<classes>
+			<class name="testcases.TestCases" />
+		</classes>
+	</test>
+</suite> -->
+<suite name="Android Test Suite" parallel="false" verbose="1">
+	<test name="Verify Login" parallel="false" preserve-order="true">
+		<classes>
+			<class name="testcases.TestCases" />
+		</classes>
+	</test>
+</suite>

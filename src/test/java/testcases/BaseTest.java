@@ -15,6 +15,7 @@ import utils.AppiumServer;
 import utils.PropertyUtils;
 import utils.ScreenshotUtility;
 import utils.WaitUtils;
+import static utils.LoggingManager.logMessage;
 
 import java.io.File;
 import java.io.IOException;
@@ -22,16 +23,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Year: 2018-19
- * An abstract base for all of the Android tests within this package
- * Responsible for setting up the Appium test Driver
- *
- * @author Prat3ik on 22/11/18
- * @project POM_Automation_Framework
- */
-
-@Listeners({ScreenshotUtility.class})
+//@Listeners({ScreenshotUtility.class})
 public abstract class BaseTest {
 
     /**
@@ -42,105 +34,6 @@ public abstract class BaseTest {
     public final static int IMPLICIT_WAIT = PropertyUtils.getIntegerProperty("implicitWait", 30);
     public static WaitUtils waitUtils = new WaitUtils();
 
-    /**
-     * This method will run at the time of Test Suite creation so it will run at once through out the execution
-     * <p>
-     * Appium is a client - server model:
-     * We need to set up appium serveer in order to connect to Device.
-     * In case of Device Farm's appium server, please comment this.
-     */
-    @BeforeSuite
-    public void startAppiumServer() throws IOException {
-        killExistingAppiumProcess();
-        killExistingAppiumProcess();
-
-        // creating appium logs folder and files
-        File appiumLogDir = new File(System.getProperty("user.dir") + "/appiumlogs");
-        if (!appiumLogDir.exists()) {
-            appiumLogDir.mkdir();
-        }
-        File logFile = new File(appiumLogDir, "appiumLogs.txt");
-        if (!logFile.exists()) {
-            logFile.createNewFile();
-        }
-
-        if (AppiumServer.appium == null || !AppiumServer.appium.isRunning()) {
-                AppiumServer.start();
-                System.out.println("Appium server has been started");
-            }
-    }
-
-    private void killExistingAppiumProcess() throws IOException {
-        Runtime.getRuntime().exec("killall node");
-        System.out.println("Killing existing appium process");
-    }
-
-    public void stopAppiumServer(String platformType, @Optional String platformName) throws IOException {
-        if (AppiumServer.appium != null || AppiumServer.appium.isRunning()) {
-            AppiumServer.stop();
-            System.out.println("Appium server has been stopped");
-        }
-    }
-
-    /**
-     * This method will be called everytime before your test runs
-     */
-    @BeforeTest
-    public abstract void setUpPage();
-
-    /**
-     * This method will run at the time of Test Suite creatopn so it will run at once through out the execution
-     * <p>
-     * Appium is a client - server model:
-     * So we need to set up appium client in order to connect to Device Farm's appium server.
-     */
-    @BeforeMethod
-    public void setUpAppium() throws MalformedURLException {
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        setDesiredCapabilitiesForAndroid(capabilities);
-        driver = new AppiumDriver(new URL(APPIUM_SERVER_URL), capabilities);
-    }
-
-    /**
-     * This method will always execute after each test case, This will quit the WebDriver instance called at the last
-     */
-    @AfterMethod(alwaysRun = true)
-    public void afterMethod(final ITestResult result) throws IOException {
-        String fileName = result.getTestClass().getName() + "_" + result.getName();
-        System.out.println("Test Case: [" + fileName + "] executed..!");
-    }
-
-    /**
-     * This method will be called after class finishes the execution of all tests
-     */
-    @AfterClass
-    public void afterClass() {
-    }
-
-    /**
-     * At the end of the Test Suite(At last) this method would be called
-     */
-    @AfterSuite
-    public void tearDownAppium() {
-        quitDriver();
-    }
-
-    /**
-     * This will quite the android driver instance
-     */
-    private void quitDriver() {
-        try {
-            this.driver.quit();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    /**
-     * It will set the DesiredCapabilities for the local execution
-     *
-     * @param desiredCapabilities
-     */
     private void setDesiredCapabilitiesForAndroid(DesiredCapabilities desiredCapabilities) {
         String PLATFORM_NAME = PropertyUtils.getProperty("android.platform");
         String PLATFORM_VERSION = PropertyUtils.getProperty("android.platform.version");
@@ -166,16 +59,101 @@ public abstract class BaseTest {
         desiredCapabilities.setCapability(AndroidMobileCapabilityType.AUTO_GRANT_PERMISSIONS, true);
     }
 
+    // kill the node apps and start Appium Server
+    @BeforeSuite
+    public void startAppiumServer() throws IOException {
+        logMessage("---Before suite---");
+
+        killExistingAppiumProcess();
+        killExistingAppiumProcess();
+
+        // creating appium logs folder and files
+        File appiumLogDir = new File(System.getProperty("user.dir") + "/appiumlogs");
+        if (!appiumLogDir.exists()) {
+            appiumLogDir.mkdir();
+        }
+        File logFile = new File(appiumLogDir, "appiumLogs.txt");
+        if (!logFile.exists()) {
+            logFile.createNewFile();
+        }
+
+        if (AppiumServer.appium == null || !AppiumServer.appium.isRunning()) {
+                AppiumServer.start();
+                logMessage("Appium server has been started");
+            }
+    }
+
+    @BeforeTest
+    public void setUpPage() {
+        logMessage("---Before test---");
+    }
+
+    @BeforeClass
+    public void runBeforeClass() {
+        logMessage("---Before class---");
+    }
+
+    // instantiate the ppium driver
+    @BeforeMethod
+    public void setUpAppium() throws MalformedURLException {
+        logMessage("---Before Method---");
+
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        setDesiredCapabilitiesForAndroid(capabilities);
+        driver = new AppiumDriver(new URL(APPIUM_SERVER_URL), capabilities);
+    }
+
+    @AfterMethod(alwaysRun = true)
+    public void afterMethod(final ITestResult result) throws IOException {
+        logMessage("---After method---");
+
+        String fileName = result.getTestClass().getName() + "_" + result.getName();
+        logMessage("Test Case: [" + fileName + "] executed..!");
+    }
+
+    @AfterClass
+    public void afterClass() {
+        logMessage("---After class---");
+    }
+
+    @AfterSuite
+    public void tearDownAppium() {
+        logMessage("---After suite---");
+
+        quitDriver();
+
+//        try {
+//            Process process = Runtime.getRuntime().exec("adb -s emulator-5554 emu kill");
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+    }
+
+    private void quitDriver() {
+        try {
+            this.driver.quit();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     public static WebDriver getScreenshotableWebDriver() {
         final WebDriver augmentedDriver = new Augmenter().augment(driver);
         return augmentedDriver;
     }
 
-    /**
-     * This will set implicit wait
-     *
-     * @param driver
-     */
+    private void killExistingAppiumProcess() throws IOException {
+        Runtime.getRuntime().exec("killall node");
+        logMessage("Killing existing appium process");
+    }
+
+    public void stopAppiumServer(String platformType, @Optional String platformName) throws IOException {
+        if (AppiumServer.appium != null || AppiumServer.appium.isRunning()) {
+            AppiumServer.stop();
+            logMessage("Appium server has been stopped");
+        }
+    }
+
     private static void setTimeOuts(AppiumDriver driver) {
         //Use a higher value if your mobile elements take time to show up
         driver.manage().timeouts().implicitlyWait(IMPLICIT_WAIT, TimeUnit.SECONDS);

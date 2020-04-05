@@ -1,28 +1,21 @@
 package testcases;
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
+
 import pageobject.HomeScreenPO;
 
-/**
- * Year: 2018-19
- *
- * @author Prat3ik on 23/11/18
- * @project POM_Automation_Framework
- */
+import utils.TestListener;
+
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+
+@Listeners({TestListener.class})
 public class TestCases extends BaseTest{
 
-    @Test
+    @Test(description = "View login page")
+    @Severity(SeverityLevel.CRITICAL)
     public void test() {
         HomeScreenPO homeScreenPO = new HomeScreenPO(driver);
         homeScreenPO.tapOnLoginScreenTextView();
-    }
-
-    @BeforeTest
-    @Override
-    public void setUpPage() {
-
     }
 }

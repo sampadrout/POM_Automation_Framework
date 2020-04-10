@@ -6,7 +6,7 @@
  * Copyright:
  *********************************************************************************************************/
 
-package utils;
+package org.framework.utils;
 
 import java.io.IOException;
 

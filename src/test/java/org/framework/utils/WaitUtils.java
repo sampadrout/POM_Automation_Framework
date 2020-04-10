@@ -1,9 +1,10 @@
 /*
  * (C) Copyright 2018 by Pratik Patel (https://github.com/prat3ik/)
  */
-package utils;
+package org.framework.utils;
 
 import io.appium.java_client.ios.IOSElement;
+import org.framework.utils.PropertyUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

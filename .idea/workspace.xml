@@ -1,129 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a5decad6-ba4f-4974-baff-822fe4271304" name="Default Changelist" comment="Updated the gradle tasks to build the project. Now gradle is integared with testng.">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+    <list default="true" id="a5decad6-ba4f-4974-baff-822fe4271304" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/Default Suite/POM_Automation_Framework.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/Default Suite/POM_Automation_Framework.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/Default Suite/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/bullet_point.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/testcases/BaseTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/testcases/TestCases.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/utils/ActionUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/utils/AppiumServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/utils/AppiumUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/utils/AssertUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/utils/CommonUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/utils/PropertyUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/utils/ScreenshotUtility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/utils/StringUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/utils/UnableToLoadPropertiesException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/utils/WaitUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/collapseall.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/emailable-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/failed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/jquery-1.7.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/junitreports/TEST-testcases.TestCases.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/navigator-bullet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/old/Default Suite/POM_Automation_Framework.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/old/Default Suite/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/old/Default Suite/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/old/Default Suite/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/old/Default Suite/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/old/Default Suite/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/old/Default Suite/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/old/Default Suite/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/old/Default Suite/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/old/Default Suite/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/old/Default Suite/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/old/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/passed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/test/DemoApp.apk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/test/configuration.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/skipped.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testng-reports.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testng-reports.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testng-results.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/testng.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_2113108092562942993_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_2419566652365529847_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_2832410811366156488_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_4967230478302418588_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_5157827913727588990_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_5752674938788549047_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_5899357755651601476_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_5931200462093953497_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_831405238693009007_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_8314860672032981381_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_843819696244100683_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_8896679723584601974_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_9206734233560198917_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_995331817917311678_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 14-Mar-2020__10_15_06PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 15-Mar-2020__08_12_56PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 15-Mar-2020__08_14_40PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 15-Mar-2020__08_21_45PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 15-Mar-2020__08_21_47PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 15-Mar-2020__08_28_55PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 15-Mar-2020__08_28_57PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 15-Mar-2020__08_57_02PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 15-Mar-2020__08_57_03PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 15-Mar-2020__09_39_36PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 15-Mar-2020__09_39_37PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 15-Mar-2020__09_47_26PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 15-Mar-2020__09_47_27PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 15-Mar-2020__09_50_27PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 15-Mar-2020__09_50_29PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 15-Mar-2020__09_56_43PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 15-Mar-2020__09_56_44PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 15-Mar-2020__10_21_17PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 15-Mar-2020__10_21_18PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 16-Mar-2020__04_30_11PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 16-Mar-2020__04_32_11PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 16-Mar-2020__04_32_58PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 16-Mar-2020__04_32_59PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 16-Mar-2020__11_18_24AM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 16-Mar-2020__11_18_26AM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 16-Mar-2020__12_35_49PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 16-Mar-2020__12_35_50PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Success/TestCases.test - 24-Mar-2020__08_30_31PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/framework/allureReport/TestListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/framework/appium/AppiumServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/framework/config/AndroidDeviceModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/framework/config/DeviceConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/framework/config/IOSDeviceModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/framework/drivers/AndroidDriverBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/framework/drivers/IOSDriverBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/framework/drivers/WebDriverBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/framework/enums/DeviceModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/framework/enums/PlatformName.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/framework/enums/PlatformType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/framework/helpers/Page.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/framework/imageCompare/DeviceViewportModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/framework/imageCompare/ImageComparator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/framework/logger/LoggingManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/framework/pageObjects/HomePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/framework/pageObjects/SignInPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/framework/pageObjects/SignUpPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/framework/runner/TestRunner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/framework/utils/FileUtility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageobject/BasePO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageobject/BasePO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestCases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/ActionUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/AppiumServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/framework/appium/AppiumServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/AppiumUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/framework/utils/AppiumUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/AssertUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/framework/utils/AssertUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/framework/utils/CommonUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/FileUtility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/LoggingManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/PropertyUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/framework/utils/PropertyUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/StartGenymotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/framework/utils/StartGenymotion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/framework/utils/StringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/framework/allureReport/TestListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/WaitUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/framework/utils/WaitUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,6 +106,7 @@
       <recent name="utils" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java" />
       <recent name="$APPLICATION_CONFIG_DIR$/scratches" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
     </key>
@@ -333,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586537567824</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Baseline 1">
+      <created>1586537988966</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586537988966</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -355,7 +259,8 @@
     <MESSAGE value="testng.xml added" />
     <MESSAGE value="Updated the gradle tasks to build the project. Now gradle is integared with testng." />
     <MESSAGE value="Added org.framework" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added org.framework" />
+    <MESSAGE value="Baseline 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Baseline 1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="174" key="#Custom_Plugin_Repositories" timestamp="1585494420756">
@@ -374,22 +279,22 @@
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state x="528" y="244" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1680.969@0.23.1680.969" timestamp="1585493399675" />
-    <state x="578" y="263" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586076876986">
+    <state x="578" y="263" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586538505313">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state x="578" y="263" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.969@0.23.1680.969" timestamp="1586076876986" />
-    <state x="365" y="112" key="CommitChangelistDialog2" timestamp="1586537567479">
+    <state x="578" y="263" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.969@0.23.1680.969" timestamp="1586538505313" />
+    <state x="365" y="112" key="CommitChangelistDialog2" timestamp="1586537988544">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state x="365" y="112" key="CommitChangelistDialog2/0.23.1680.969@0.23.1680.969" timestamp="1586537567479" />
+    <state x="365" y="112" key="CommitChangelistDialog2/0.23.1680.969@0.23.1680.969" timestamp="1586537988544" />
     <state x="100" y="123" width="1480" height="769" key="DiffContextDialog" timestamp="1585924428166">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state x="100" y="123" width="1480" height="769" key="DiffContextDialog/0.23.1680.969@0.23.1680.969" timestamp="1585924428166" />
-    <state x="686" y="439" key="Github.Dialog.Accounts.Choose" timestamp="1586537585742">
+    <state x="686" y="439" key="Github.Dialog.Accounts.Choose" timestamp="1586537996619">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state x="686" y="439" key="Github.Dialog.Accounts.Choose/0.23.1680.969@0.23.1680.969" timestamp="1586537585742" />
+    <state x="686" y="439" key="Github.Dialog.Accounts.Choose/0.23.1680.969@0.23.1680.969" timestamp="1586537996619" />
     <state width="1638" height="259" key="GridCell.Tab.0.bottom" timestamp="1586278636955">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
@@ -414,10 +319,10 @@
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state x="570" y="246" width="543" height="524" key="StructurePopup/0.23.1680.969@0.23.1680.969" timestamp="1585811449115" />
-    <state x="440" y="249" key="Vcs.Push.Dialog.v2" timestamp="1586537570027">
+    <state x="440" y="249" key="Vcs.Push.Dialog.v2" timestamp="1586537990968">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state x="440" y="249" key="Vcs.Push.Dialog.v2/0.23.1680.969@0.23.1680.969" timestamp="1586537570027" />
+    <state x="440" y="249" key="Vcs.Push.Dialog.v2/0.23.1680.969@0.23.1680.969" timestamp="1586537990968" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1585496317657">
       <screen x="0" y="23" width="1680" height="969" />
     </state>

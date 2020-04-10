@@ -4,7 +4,7 @@ import org.testng.annotations.*;
 
 import pageobject.HomeScreenPO;
 
-import utils.TestListener;
+import org.framework.allureReport.TestListener;
 
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;

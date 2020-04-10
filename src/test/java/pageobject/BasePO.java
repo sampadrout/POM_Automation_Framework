@@ -3,8 +3,8 @@ package pageobject;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.support.PageFactory;
-import utils.PropertyUtils;
-import utils.WaitUtils;
+import org.framework.utils.PropertyUtils;
+import org.framework.utils.WaitUtils;
 
 import java.time.Duration;
 

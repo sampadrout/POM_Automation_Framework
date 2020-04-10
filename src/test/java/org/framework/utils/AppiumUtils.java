@@ -1,7 +1,7 @@
 /*
  * (C) Copyright 2018 by Pratik Patel (https://github.com/prat3ik/)
  */
-package utils;
+package org.framework.utils;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;

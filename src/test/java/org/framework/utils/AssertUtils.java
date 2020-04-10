@@ -1,4 +1,4 @@
-package utils;
+package org.framework.utils;
 
 import org.testng.Assert;
 

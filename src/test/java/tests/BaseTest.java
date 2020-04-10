@@ -11,10 +11,10 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
-import utils.AppiumServer;
-import utils.PropertyUtils;
-import utils.WaitUtils;
-import static utils.LoggingManager.logMessage;
+import org.framework.appium.AppiumServer;
+import org.framework.utils.PropertyUtils;
+import org.framework.utils.WaitUtils;
+import static org.framework.logger.LoggingManager.logMessage;
 
 import java.io.File;
 import java.io.IOException;

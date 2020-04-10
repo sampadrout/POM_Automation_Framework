@@ -2,7 +2,7 @@
  * Year: 2018-2019
  * stout
  */
-package utils;
+package org.framework.utils;
 
 import java.io.IOException;
 import java.io.InputStream;

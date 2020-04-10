@@ -8,7 +8,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 /**
  * Year: 2018-19
  *
- * @author Prat3ik on 23/11/18
+ * @author srout on 23/11/18
  * @project POM_Automation_Framework
  */
 public class HomeScreenPO extends BasePO {

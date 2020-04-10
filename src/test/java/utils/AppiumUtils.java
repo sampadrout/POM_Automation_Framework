@@ -17,11 +17,6 @@ import static io.appium.java_client.touch.WaitOptions.waitOptions;
 import static java.time.Duration.ofMillis;
 import static java.time.Duration.ofSeconds;
 
-/**
- * This class contains custom appium/selenium methods for Webelement
- *
- * @author prat3ik
- */
 public class AppiumUtils {
     public static WaitUtils waitUtils = new WaitUtils();
 

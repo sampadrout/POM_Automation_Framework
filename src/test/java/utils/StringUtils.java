@@ -10,8 +10,8 @@ import java.util.List;
  *
  * This class contains String Utility methods that can be used by other class.
  *
- * @author Prat3ik on 27/09/18
- * @project cloudtimer.ios.automation
+ * @author srout on 27/09/18
+ * @project
  */
 public class StringUtils {
 

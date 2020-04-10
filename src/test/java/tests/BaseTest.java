@@ -1,4 +1,4 @@
-package testcases;
+package tests;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
@@ -13,7 +13,6 @@ import org.testng.annotations.*;
 
 import utils.AppiumServer;
 import utils.PropertyUtils;
-import utils.ScreenshotUtility;
 import utils.WaitUtils;
 import static utils.LoggingManager.logMessage;
 

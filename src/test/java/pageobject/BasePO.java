@@ -11,7 +11,7 @@ import java.time.Duration;
 /**
  * Year: 2018-19
  *
- * @author Prat3ik on 22/11/18
+ * @author srout on 22/11/18
  * @project POM_Automation_Framework
  */
 public class BasePO {
